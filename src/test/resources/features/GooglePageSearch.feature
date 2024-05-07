@@ -21,7 +21,7 @@
 Feature: Google Search functions
 
 
-  @tag1
+  
   Scenario: Seacrh Java Tutorial
     Given User is on Google home page
     When User search Java Tutorial

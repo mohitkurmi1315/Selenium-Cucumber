@@ -14,7 +14,9 @@ import io.cucumber.testng.CucumberOptions;
 //	condtition 3 : to execute the scenario when all the steps are implemented , keep below as false
 	dryRun = false,
 //	pretty plugin  is for detailed berbose console output & html: pugin is for html report
-	plugin = {"pretty","html:target/reports/HtmlReport.html"},
+	plugin = {"pretty","html:target/reports/HtmlReport.html",
+			"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+			"rerun:target/FailedScenarios.txt"},
 //	below is for more readable console output
 	monochrome = true)
 public class GooglePageRunner extends AbstractTestNGCucumberTests{
